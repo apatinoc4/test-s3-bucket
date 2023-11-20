@@ -10,10 +10,7 @@ const port = 5000;
 
 const s3Client = new S3Client({
   region: "us-east-1",
-  credentials: {
-    accessKeyId: "AKIARLJI6E6FA64Y7E3J",
-    secretAccessKey: "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",
-  },
+  credentials: {},
 });
 
 app.get("/presigned", async (req, res) => {
